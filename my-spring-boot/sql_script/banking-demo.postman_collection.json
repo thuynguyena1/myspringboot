@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "7fcc7197-0e53-46d9-ab83-51e7e8e7baee",
+		"name": "banking-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "AdTran eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQG1pY3JvYWQudm4iLCJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwiZXhwIjoxNTQwNTgwNjAyfQ.7UsQbAWWGMCk03PVG7panXTW0Uh-ysg9WvZk1mmMxbg"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"name\":\"Nguyen Duong\",\n\t\"phone\":\"0918622020\",\n\t\"email\":\"thuynguyenduong@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "AdTran eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQG1pY3JvYWQudm4iLCJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwiZXhwIjoxNTQwNTgwNjAyfQ.7UsQbAWWGMCk03PVG7panXTW0Uh-ysg9WvZk1mmMxbg"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"name\":\"Nguyen Duong\",\n\t\"phone\":\"0918622020\",\n\t\"email\":\"thuynguyenduong@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "AdTran eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQG1pY3JvYWQudm4iLCJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwiZXhwIjoxNTQwNTgwNjAyfQ.7UsQbAWWGMCk03PVG7panXTW0Uh-ysg9WvZk1mmMxbg"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"name\":\"Nguyen Duong1\",\n\t\"phone\":\"0918622021\",\n\t\"email\":\"thuynguyenduong1@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "AdTran eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQG1pY3JvYWQudm4iLCJyb2xlIjoiUk9MRV9TVVBFUkFETUlOIiwiZXhwIjoxNTQwNTgwNjAyfQ.7UsQbAWWGMCk03PVG7panXTW0Uh-ysg9WvZk1mmMxbg"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\t\"name\":\"Nguyen Duong\",\n\t\"phone\":\"0918622020\",\n\t\"email\":\"thuynguyenduong@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/customers/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
